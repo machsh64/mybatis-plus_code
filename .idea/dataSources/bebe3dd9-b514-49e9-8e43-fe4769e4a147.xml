@@ -972,7 +972,7 @@
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="308" parent="306" name="name">
+    <column id="308" parent="306" name="user_name">
       <Position>2</Position>
       <Comment>姓名</Comment>
       <DataType>varchar(30)|0s</DataType>
@@ -990,7 +990,13 @@
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="311" parent="306" name="PRIMARY">
+    <column id="311" parent="306" name="is_deleted">
+      <Position>5</Position>
+      <DataType>int|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="312" parent="306" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>uid</ColNames>
       <Primary>1</Primary>

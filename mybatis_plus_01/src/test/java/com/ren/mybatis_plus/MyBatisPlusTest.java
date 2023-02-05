@@ -23,7 +23,7 @@ import java.util.Map;
 public class MyBatisPlusTest {
 
     @Autowired
-    UserMapper userMapper;
+    private UserMapper userMapper;
 
     @Test
     public void testSelectList() {
@@ -69,9 +69,9 @@ public class MyBatisPlusTest {
         // 修改用户信息 根据id
         // ==> UPDATE user SET name=?, age=?, email=? WHERE id=?
         // ==> lilite(String), 23(Integer), machsh Ren(String), 4(Long)
-        User user = new User(4L,"lilite",23,"machsh Ren",0);
-        int i = userMapper.updateById(user);
-        log.info("######## result {} ##############",i);
+        //User user = new User(4L,"lilite",23,"machsh Ren",0);
+        //int i = userMapper.updateById(user);
+        //log.info("######## result {} ##############",i);
     }
 
     @Test

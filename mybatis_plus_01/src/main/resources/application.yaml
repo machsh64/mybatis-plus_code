@@ -10,8 +10,12 @@ spring:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  # mybatis_plus的日志功能
-# 设置 MyBatis_Plus 的全局配置
+  # 设置 MyBatis_Plus 的全局配置
   global-config:
     db-config:
       table-prefix: t_  # 设置实体类所对应的表的同意前缀
       id-type: auto  # 设置统一的主键生成策略
+  # 配置类型别名所对应的包
+  type-aliases-package: com.ren.mybatis_plus.pojo
+  # 扫描通用枚举的包
+  type-enums-package: com.ren.mybatis_plus.enums

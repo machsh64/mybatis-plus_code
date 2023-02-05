@@ -20,7 +20,7 @@ import java.util.LinkedList;
 public class MyBatisPlusServiceTest {
 
     @Autowired
-    UserService userService;
+    private UserService userService;
 
     @Test
     public void testGetCount() {

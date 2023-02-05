@@ -3,6 +3,7 @@ package com.ren.mybatis_plus.pojo;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableLogic;
+import com.ren.mybatis_plus.enums.SexEnum;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -32,6 +33,8 @@ public class User {
     private String name;
 
     private Integer age;
+
+    private SexEnum sex;
 
     private String email;
 

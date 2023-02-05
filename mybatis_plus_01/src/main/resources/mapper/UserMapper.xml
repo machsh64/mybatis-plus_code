@@ -8,8 +8,15 @@
 
     <!-- Map<String, Object> selectMapById(@Param("id") Long id); -->
     <select id="selectMapById" resultType="map">
-        SELECT uid, name, age, email
+        SELECT uid, user_name, age, email
         FROM t_user
         WHERE uid = #{id}
+    </select>
+
+    <!-- Page<User> selectPageVo(Page<User> page,Integer age); -->
+    <select id="selectPageVo" resultType="User">
+        SELECT uid, user_name, age, email
+        FROM t_user
+        WHERE age > #{age}
     </select>
 </mapper>
